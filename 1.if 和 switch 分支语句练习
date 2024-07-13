@@ -1,0 +1,87 @@
+//////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+int main()
+{
+    if (3 == 5)
+    {
+        printf("Bingo!");
+    }
+    else
+    {
+        printf("Wrong");
+        printf("as fuck");
+    }
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+int test()
+{
+    int a = 0;
+    if (a == 3)
+        return 100;
+    else
+        return 101;
+}
+int main()
+{
+    int b = test();
+    printf("%d", b);
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+//查看数a为奇数还是偶数
+#include <stdio.h>
+int main()
+{
+    int a = 0;
+    scanf("%d", &a);
+    if （a % 2 == 1)
+        printf("odds");
+    else
+        printf("evens");
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+int main()
+{
+    int age = 0;
+    printf("Please enter your age:\n");
+    scanf("%d", &age);
+    if (age < 18 && age > 0)
+        printf("Adolescent, alcohols not allowed");
+    else if (age >= 18)
+        printf("Adult, alcohols allowed");
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////
+//输出1-100之间的奇数
+#include <stdio.h>
+int main()
+{
+    int a = 1;
+    while (a <= 100)
+    {
+        printf("%d ", a);
+        a = a + 2;
+    }
+    return 0;
+}
+//或者
+#include <stdio.h>
+int main()
+{
+    int a = 1;
+    while (a <= 100)
+    {
+        if (a % 2 == 1)
+            printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
